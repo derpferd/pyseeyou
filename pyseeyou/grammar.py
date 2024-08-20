@@ -25,10 +25,10 @@ ICUMessageFormat = Grammar('''
     offset = _ "offset" _ ":" _ digits _
 
     octothorpe   = ~"#"
-    string       = (~"\w+"/~"[^{}]+"/_)+
-    id           = ~"\w+"i
-    replace_type = ~"\w+"i
-    decimal      = ~"[0-9]+(\.[0-9]+)?"
+    string       = (~"\\w+"/~"[^{}]+"/_)+
+    id           = ~"\\w+"i
+    replace_type = ~"\\w+"i
+    decimal      = ~"[0-9]+(\\.[0-9]+)?"
     digits       = ~"[0-9]+"
-    _            = ~"\s*"
+    _            = ~"\\s*"
     ''')
